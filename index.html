@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rental Mobil - Sewa Mobil Termurah</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#logo" class="logo">RentalMobil</a>
+
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="rentalmobil.html#tentang">Tentang kami</a></li>
+          <li><a href="page/kritik dan saran.html">Kritik dan saran</a></li>
+          <li><a href="page/layanan.html">Layanan</a></li>
+          <li><a href="page/mobil.html">Mobil</a></li>
+          <li><a href="page/formulir.html">Formulir</a></li>
+        </ul>
+        <div class="tombol">&#9776;</div>
+      </div>
+    </nav>
+
+    <section class="welcome-section" id="home">
+      <div class="welcome-text">
+        <h1>Selamat Datang di RentalMobil</h1>
+        <p style="margin-bottom: 40px">
+          Kami menyediakan berbagai pilihan mobil untuk memenuhi kebutuhan
+          perjalanan Anda. Pesan sekarang dan nikmati pengalaman berkendara yang
+          nyaman.
+        </p>
+        <a href="#mobil" class="btn-primary">Lihat Mobil Kami</a>
+      </div>
+    </section>
+
+    <section class="tentang-section" id="tentang">
+      <div class="image-container">
+        <img src="img/malang.jpg" alt="Tentang Kami" />
+      </div>
+      <div class="text-container">
+        <h2>Tentang Kami</h2>
+        <p>
+          Rental Mobil Berkah Citra Amanah adalah sebuah perusahaan yang
+          bergerak di bidang jasa rental mobil di daerah malang, Indonesia. Visi
+          menjadi penyedia jasa rental mobil terpercaya dan terbaik di daerah
+          malang serta memberikan layanan yang memuaskan dan terbaik kepada
+          pelanggannya. Misi memberikan pelayanan yang prima dan profesional
+          kepada pelanggan, menyediakan armada mobil yang berkualitas dan
+          terawat dengan baik, serta memberikan harga yang kompetitif terjangkau
+          untuk pelanggan.
+        </p>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+      const tombol = document.querySelector(".tombol");
+      const menu = document.querySelector(".menu");
+
+      tombol.addEventListener("click", () => {
+        menu.classList.toggle("aktif");
+      });
+    </script>
+  </body>
+</html>

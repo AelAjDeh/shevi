@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rental Mobil - Sewa Mobil Termurah</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#logo" class="logo">RentalMobil</a>
+
+        <ul class="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#tentang">Tentang Kami</a></li>
+          <li><a href="../page/layanan.html">Layanan</a></li>
+          <li><a href="#mobil">Mobil</a></li>
+          <li><a href="../page/kritik dan saran.html">Kritik dan saran</a></li>
+          <li><a href="../page/formulir.html">Formulir</a></li>
+        </ul>
+        <div class="tombol">&#9776;</div>
+      </div>
+    </nav>
+    <section class="mobil-section" id="mobil"></section>
+    <h2>Pilihan Mobil Kami</h2>
+    <div class="mobil-container">
+      <a href="formulir.html" style="text-decoration: none"
+        ><div class="mobil-card">
+          <img src="asset/img/avanza.jpg" alt="Toyota Avanza" />
+          <h3>Toyota Avanza</h3>
+          <p>Harga: Rp 400.000/hari</p>
+        </div></a
+      >
+      <a href="formulir.html" style="text-decoration: none"
+        ><div class="mobil-card">
+          <img src="asset/img/civic.jpg" alt="Honda Civic" />
+          <h3>Honda Civic</h3>
+          <p>Harga: Rp 500.000/hari</p>
+        </div></a
+      >
+      <a href="formulir.html" style="text-decoration: none"
+        ><div class="mobil-card">
+          <img src="asset/img/jazz.jpg" alt="Honda Jazz" />
+          <h3>Honda Jazz</h3>
+          <p>Harga: Rp 600.000/hari</p>
+        </div></a
+      >
+      <a href="formulir.html" style="text-decoration: none"
+        ><div class="mobil-card">
+          <img src="asset/img/fortuner.jpg" alt="Toyota Fortuner" />
+          <h3>Toyota Fortuner</h3>
+          <p>Harga: Rp 1.100.000/hari</p>
+        </div></a
+      >
+    </div>
+
+    <script type="text/javascript">
+      const tombol = document.querySelector(".tombol");
+      const menu = document.querySelector(".menu");
+
+      tombol.addEventListener("click", () => {
+        menu.classList.toggle("aktif");
+      });
+    </script>
+  </body>
+</html>

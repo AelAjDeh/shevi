@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Mobil - Sewa Mobil Termurah</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#logo" class="logo">RentalMobil</a>
+
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#tentang">Tentang Kami</a></li>
+                <li><a href="#layanan">Layanan</a></li>
+                <li><a href="../page/mobil.html">Mobil</a></li>
+                <li><a href="../page/kritik dan saran.html">Kritik dan saran</a></li>
+                <li><a href="../page/formulir.html">Formulir</a></li>
+            </ul>
+            <div class="tombol">&#9776;</div>
+        </div>
+    </nav>
+
+    <section id="daftar-buku">
+        <h2>Daftar Mobil</h2>
+        <table>
+          <tr>
+            <th>Jenis Mobil</th>
+            <th>Tahun Mobil</th>
+            <th>Harga Sewa</th>
+          </tr>
+          <tr>
+            <td>Honda civic</td>
+            <td>2023</td>
+            <td>Rp.500.000</td>
+          </tr>
+          <tr>
+            <td>Toyota Fortuner</td>
+            <td>2022</td>
+            <td>Rp.1.100.000</td>
+          </tr>
+          <tr>
+            <td>Toyota Avanza</td>
+            <td>2023</td>
+            <td>Rp.400.000</td>
+          </tr>
+          <tr>
+          </tr>
+            <td>Honda Jazz</td>
+            <td>2023</td>
+            <td>Rp.600.000</td>
+          </tr>
+        </table>
+      </section>
+    <script type="text/javascript">
+        const tombol = document.querySelector(".tombol");
+        const menu = document.querySelector(".menu");
+
+        tombol.addEventListener("click", () => {
+            menu.classList.toggle("aktif");
+        });
+    </script>
+</body>
+
+</html>

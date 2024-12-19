@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Mobil - Sewa Mobil Termurah</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#logo" class="logo">logo</a>     
+            <ul class="menu">
+                <li><a href="../index.html">home</a></li>
+                <li><a href="../index.html">tentang kami</a></li>
+                <li><a href="../page/layanan.html">Layanan</a></li>
+                <li><a href="../page/mobil.html">harga sewa</a></li>
+                <li><a href="#">kritik & saran</a></li>
+                <li><a href="../page/formulir.html">formulir</a></li>
+            </ul>
+            <div class="tombol">&#9776;</div>
+        </div>
+    </nav>
+    <section class="kritik dan saran-section" id="kritik dan saran">
+        <h2>Kritik dan Saran</h2>
+        <form action="" method="get" class="kritik dan saran-from">
+            <div class="form-group">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required/>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required/>
+            </div>
+                <div class="form-group">
+                    <label for="massage">Pesan</label>
+                    <textarea id="massage" name="massage" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary">Kirim Pesan</button>    
+        </form>
+    <script type="text/javascript">
+        const tombol = document.querySelector(".tombol");
+        const menu = document.querySelector(".menu");
+
+        tombol.addEventListener("click", () => {
+            menu.classList.toggle("aktif");
+        });
+    </script>
+</body>
+
+</html>

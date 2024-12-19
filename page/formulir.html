@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Mobil - Sewa Mobil Termurah</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#logo" class="logo">RentalMobil</a>
+
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html">Tentang Kami</a></li>
+                <li><a href="../page/layanan.html">Layanan</a></li>
+                <li><a href="../page/mobil.html">Mobil</a></li>
+                <li><a href="../page/kritik dan saran.html">Kritik dan saran</a></li>
+                <li><a href="#">Formulir</a></li>
+            </ul>
+            <div class="tombol">&#9776;</div>
+        </div>
+    </nav>
+
+    <script>
+        function showPopup() {
+            // Mengambil nilai input dari formulir
+            var nama = document.getElementById("nama").value;
+            var alamat = document.getElementById("alamat").value;
+            var nik = document.getElementById("nik").value;
+            var tanggalLahir = document.getElementById("tanggal_lahir").value;
+            var tanggalPinjam = document.getElementById("tanggal_pinjam").value;
+            var tanggalKembali = document.getElementById("tanggal_kembali").value;
+            var mobil = document.getElementById("mobil").value;
+            var jumlah = document.getElementById("jumlah").value;
+  
+            // Membuat pesan pop-up
+            var popupMessage = "Data Formulir:\n";  
+            popupMessage += "Nama: " + nama + "\n";
+            popupMessage += "Alamat: " + alamat + "\n";
+            popupMessage += "NIK: " + nik + "\n";
+            popupMessage += "Tanggal Lahir: " + tanggalLahir + "\n";
+            popupMessage += "Tanggal Peminjaman: " + tanggalPinjam + "\n";
+            popupMessage += "Tanggal Pengembalian: " + tanggalKembali + "\n";
+            popupMessage += "mobil yang dipinjam: " + mobil  + "\n";
+            popupMessage += "Jumlah: " + jumlah;
+  
+            
+            alert(popupMessage);
+        }
+    </script>
+  </head>
+  <body>
+  
+    <form>
+      <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama"><br><br>
+  
+        <label for="alamat">Alamat:</label><br>
+        <input type="text" id="alamat" name="alamat"><br><br>
+  
+        <label for="nik">NIK:</label><br>
+        <input type="text" id="nik" name="nik"><br><br>
+  
+        <label for="tanggal_lahir">Tanggal Lahir:</label><br>
+        <input type="date" id="tanggal_lahir" name="tanggal_lahir"><br><br>
+  
+        <label for="tanggal_pinjam">Tanggal Penyewaan:</label><br>
+        <input type="date" id="tanggal_pinjam" name="tanggal_pinjam"><br><br>
+  
+        <label for="tanggal_kembali">Tanggal Pengembalian:</label><br>
+        <input type="date" id="tanggal_kembali" name="tanggal_kembali"><br><br>
+  
+        <label for="mobil">Pilih Mobil:</label><br>
+        <select id="mobil" name="mobil">
+            <option value="Innova Reborn">Innova Reborn</option>
+            <option value="Alphard">Alphard</option>
+            <option value="Land Cruiser">Land Cruiser</option>
+  
+            
+        </select><br><br>
+  
+        <label for="jumlah">Jumlah:</label><br>
+        <input type="number" id="jumlah" name="jumlah"><br><br>
+  
+        <button type="button" onclick="showPopup()">Submit</button>
+    </form>
+  
+  </body>
+  </html>
